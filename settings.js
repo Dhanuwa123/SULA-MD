@@ -1,12 +1,12 @@
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
-function convertToBool(text, fault = 'false') {
+function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
 
-SESSION_ID: process.env.SESSION_ID === undefined ? '𝐒𝐔𝐋𝐀-𝐌𝐃=UjEXTKQK#p4aK-3GPAo818Z5U8SVK5tzYyUyaq-Oau8ZApCGilHE' : process.env.SESSION_ID,
-PREFIX: process.env.PREFIX || '#' ,
+SESSION_ID: process.env.SESSION_ID === undefined ? '𝐒𝐔𝐋𝐀-𝐌𝐃=t6VlCQAL#mf_Rvhms3GNNMNU-a_FEUoXOugyK11pUdmwPDf1ZEYU' : process.env.SESSION_ID,
+PREFIX: process.env.PREFIX || '' ,
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS === undefined ?"false" : process.env.AUTO_READ_STATUS,
 MODE: process.env.MODE === undefined ?"privet" : process.env.MODE,
 AUTO_VOICE: process.env.AUTO_VOICE === undefined ? "false" : process.env.AUTO_VOICE,
@@ -16,7 +16,7 @@ AUTO_STICKER: process.env.AUTO_STICKER === undefined ? "false" : process.env.AUT
 ANTI_BAD: process.env.ANTI_BAD === undefined ? "false" : process.env.ANTI_BAD,
 ANTI_LINK: process.env.ANTI_LINK === undefined ? "false" : process.env.ANTI_LINK,
 ANTI_CALL: process.env.ANTI_CALL === undefined ? "false" : process.env.ANTI_CALL,    
-DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '+94751533540' : process.env.DELETEMSGSENDTO,
+DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '+94788601515' : process.env.DELETEMSGSENDTO,
 ANTI_DELETE : process.env.ANTI_DELETE === undefined ? "true" : process.env.ANTI_DELETE,
 ANTI_CALL: process.env.ANTI_CALL === undefined ? "false" : process.env.ANTI_CALL,
 ANTI_BOT: process.env.ANTI_BOT === undefined ? "false" : process.env.ANTI_BOT,
